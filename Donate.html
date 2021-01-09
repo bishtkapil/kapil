@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Donate </title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Donate.css">
+         <script language="javascript">
+         function aa()
+           {
+              confirm ("Are you sure to Submit?");
+             }
+        </script>
+
+</head>
+<body>
+
+	 <header>
+		<div class="container">
+			<div id="branding"> <h1> Hospital </h1> 
+			</div>
+         <div class="toggle-btn" onclick="myfunction();">
+          <span></span>
+          <span></span>
+          <span></span>
+    </div>
+			<nav id="nav">
+				<ul class="v-class-resp">
+					<li><a href="Index.html" class="current"> Home </a></li>
+                    <li><a href="Find.html"> Find Doctor </a></li>
+                    <li><a href="apptment.html"> Book Appointment </a></li>
+                    <li><a href="Home.html"> Home Check-Up </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                    <li><a href="about.html"> About Us </a></li>
+				</ul>
+               </nav>
+		</div>	
+	</header>
+
+		<div class="line">  </div>
+    
+    <section id="Boxes">
+	<div class="flex-container">
+		<div class="box">  <a href="#"><p>Get Treatment <br>Advice</p></a></div>
+		<div class="box"><a href="#"><p>Online-Report</p></a></div>
+        <div class="box">  <a href="#"><p>+91-11-48-555-555 <br>
+                            +91-7290072901</p></a></div>
+        <div class="box"> <a href="#"><p>Login <br> Sign-up</p></a></div>                   
+	</div>
+    </section>
+
+         <section id="showcase">
+    		<div class="img"><img src="img/donate.jpg" alt="responsive"></div>
+
+    		<div class="abt">  <h1> Enter Your Details </h1></div>
+            </section>
+
+    <section id="newsletter">
+      	 <div class="form">
+      	 	<div class="li">  Please fill the form to book an Appointment </div><br><br>
+      	 	<form action="Donate.php" method="POST">
+            <label for="name"> Name </label><br>
+            <input type="text" placeholder="Enter your name" name="Name" required><br><br>
+            <label for="email"> Email </label><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+            <label for="text"> Mobile Number </label><br>
+            <input type="number" placeholder="Enter your Mobile Number" name="number" maxlength="10" required><br><br>
+            <label for="text"> Address</label><br>
+            <input type="text" placeholder="Enter your Address" name="address" maxlength="10" required><br><br>
+            <button type="submit" name="submit" class="but" onclick="aa()">Submit</button>
+            </form>
+      	 </div>
+</section>
+
+<section id="showcase2">
+      	 <div class="qry"> <h1> For Query </h1> </div>
+      	 <div class="txt"> <p> Please fill the form for Anykind of query </p></div>
+         </section>
+
+        <section id="newsletter2">
+         <div class="form2">
+          <form action="query.php" method="POST">
+    	           <label for="email"><b>Email</b></label><br><br>
+                   <input type="text" placeholder="Enter Email" name="email" required> <br><br>
+                   <label for="message"><b>Message</b></label><br><br>
+                   <textarea rows="4" cols="50" placeholder="Enter your Query" required></textarea><br><br>
+                   <button type="submit" class="registerbtn" onclick="aa()">Submit</button>
+                    </div>
+         </form>
+         </section>
+
+         <footer>
+    	<div class="flexcontainer">
+        <div class="item"> 
+          <h1>Quick Links</h1>
+          <div class="border"> </div>
+          <ul>
+               <li><a href="#"> Home</li></a>
+               <li><a href="#"> About</li></a>
+               <li><a href="#"> Appointment</li></a>
+               <li><a href="#"> Find Doctor</li></a>
+               <li><a href="#"> Home-Checkup</li></a>
+               <li><a href="#"> Contact US</li></a>
+          </ul>
+        </div>
+         
+         <div class="item">
+                    <h1>Feedback</h1>
+              <div class="border"> </div>
+           <p>Have any complaints or suggestions?
+                <br>Just tell us. We are here to help you
+                with everything. </p>
+                <a href="#" id="but" style="text-decoration: none;"><p style="margin-top: 20px; color: orange;" > Share Your Feedback</p></a>
+            </div>
+
+            <div class="item">
+                    <h1>Contact Us</h1>
+             <div class="border"> </div>
+                <ul>
+                    <li>1, XYZ Street, New Delhi</li>
+                    <li>1575023974</li>
+                    <li>Rthospital@gmail.com</li>
+                    </ul>
+                </div>
+
+    </div>
+    </footer>
+
+
+
+
+        <script>
+    function myfunction(){
+      var navbar = document.getElementById('nav');
+      navbar.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login </title>
+	     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Login.css">
+
+</head>
+<body>
+
+	    <header>
+     <div class="container">
+			<div id="branding"> <h1> Hospital </h1> 
+			</div>
+         <div class="toggle-btn" onclick="myfunction();">
+          <span></span>
+          <span></span>
+          <span></span>
+    </div>
+			<nav id="nav">
+				<ul class="v-class-resp">
+					<li><a href="Index.html" class="current"> Home </a></li>
+                    <li><a href="Find.html"> Find Doctor </a></li>
+                    <li><a href="apptment.html"> Book Appointment </a></li>
+                    <li><a href="Home.html"> Home Check-Up </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                    <li><a href="about.html"> About Us </a></li>
+				</ul>
+               </nav>
+		</div>	
+	</header>
+
+	<div class="line">  </div>
+     
+     <section id="Boxes">
+     	<div class="flex-container">
+           	<div class="box">  <a href="#"><p>Get Treatment <br>Advice</p></a></div>
+		<div class="box"><a href="#"><p>Online-Report</p></a></div>
+        <div class="box">  <a href="#"><p>+91-11-48-555-555 <br>
+                            +91-7290072901</p></a></div>
+        <div class="box"> <a href="#"><p>Login <br> Sign-up</p></a></div>                   
+	</div>
+     </section>
+
+     <div class="hero">
+            <div class="form-box">
+              <div class="button-box">
+                  <div id="btn"></div>
+                  <button type="button" class="toggle-btn"  onclick="login()">Log - in</button>
+                  <button type="button" class="toggle-btn" onclick="register()">Register</button> 
+            
+                  
+              </div>
+            
+           <form id="login" action="Login.php"  class="input-group" method="POST">
+                <input type="text" class="input-filed" name="email" placeholder=" Enter your email" required>
+            
+                <input type="password" class="input-filed" name="password" placeholder=" Enter Psssword" required>
+            
+                 <input type="checkbox" class="check-box"><span>Remember Password</span>
+                  <button type="submit" class="submit-btn" name="login">Log In</button>
+            
+                </form>
+            
+                <form id="register" action="Register.php" class="input-group" method="POST">
+                    <input type="text" class="input-filed" name="email" placeholder="Enter your Email" required>
+                 
+                     <input type="number" class="input-filed" name="number" placeholder="Mobile No" required>
+                    <input type="password" class="input-filed" name="pass" placeholder=" Psssword" required>
+                   <input type="password"  class="input-filed" name="conpass" placeholder="Confirm Psssword" required>
+                
+                     <input type="checkbox" class="check-box"><span>Remember Password</span>
+                      <button type="submit" class="submit-btn" name="submit" >Submit</button>
+                
+                    </form>
+            </div>
+            </div>
+
+             <script>
+                   var x = document.getElementById("login");
+                   var y = document.getElementById("register");
+                   var z = document.getElementById("btn");
+            
+                   function register(){
+                       x.style.left= " -480px";
+                       y.style.left = "20px";
+                       z.style.left = "110px";
+                   }
+            
+                   function login(){
+                       x.style.left= " 20px";
+                       y.style.left = "450px";
+                       z.style.left = "0 ";
+                   }
+                   
+              </script>
+
+           <script>
+    function myfunction(){
+      var navbar = document.getElementById('nav');
+      navbar.classList.toggle('show');
+    }
+  </script>     
+</body>
+</html>
